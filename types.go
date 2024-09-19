@@ -96,9 +96,12 @@ type RenewalInfo struct {
 	AutoRenewProductId          string `json:"autoRenewProductId"`
 	AutoRenewStatus             int32  `json:"autoRenewStatus"`
 	Environment                 string `json:"environment"`
+	Currency                    string `json:"currency"`
+	EligibleWinBackOfferIds     string `json:"eligibleWinBackOfferIds"`
 	ExpirationIntent            int32  `json:"expirationIntent"`
 	GracePeriodExpiresDate      int    `json:"gracePeriodExpiresDate"`
 	IsInBillingRetryPeriod      bool   `json:"isInBillingRetryPeriod"`
+	OfferDiscountType           string `json:"offerDiscountType"`
 	OfferIdentifier             string `json:"offerIdentifier"`
 	OfferType                   int32  `json:"offerType"`
 	OriginalTransactionId       string `json:"originalTransactionId"`
@@ -106,5 +109,6 @@ type RenewalInfo struct {
 	ProductId                   string `json:"productId"`
 	RecentSubscriptionStartDate int    `json:"recentSubscriptionStartDate"`
 	RenewalDate                 int    `json:"renewalDate"`
+	RenewalPrice                int    `json:"renewalPrice"`
 	SignedDate                  int    `json:"signedDate"`
 }
